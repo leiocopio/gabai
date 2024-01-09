@@ -1,0 +1,10 @@
+/* Nav for footer*/
+
+footer{
+    display: flex;
+        justify-items: center;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: space-around;
+
+}
