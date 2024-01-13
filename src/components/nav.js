@@ -2,6 +2,7 @@
     import './css/nav.css'
     import { FaSearch } from "react-icons/fa";
     import { BsMoon } from "react-icons/bs";
+    import SignIn from "./signIn";
     
     function Navbar() {
     
@@ -18,9 +19,7 @@
 
         <div className='flex flex-row '>
             {/* Login Btn */}
-            <button className=' border-2 border-azure p-2 rounded-md text-azure font-bold text-xl'>
-            Log In
-            </button>
+        <SignIn/>
         </div>
 
         <div>
