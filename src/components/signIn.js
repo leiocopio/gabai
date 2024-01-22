@@ -1,5 +1,6 @@
 import Popup from 'reactjs-popup';
 import { IoIosCloseCircleOutline } from "react-icons/io";
+import SignUp from "./signUp";
 
 export default function PopupComponent() {
   return (
@@ -21,7 +22,7 @@ export default function PopupComponent() {
               <input type="password" placeholder='Password' className='w-[25rem] border-2 border-black rounded-xl p-2' />
             </div>
             <div className='flex flex-row mx-12 mt-4'>
-              <p>Forgot password?</p>
+              <a href="#">Forgot password?</a>
             </div>
             <br />
 
@@ -30,7 +31,7 @@ export default function PopupComponent() {
             </div>
               <br />
             <div className='flex flex-row items-center justify-center'>
-              <p>Don't have an account? <a href="#" className='text-azure'>Sign up Here</a></p>
+              <p>Don't have an account? <SignUp/> </p>
             </div>
 
             
