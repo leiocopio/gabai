@@ -113,8 +113,8 @@ export default function PopupComponent() {
                         {/* Mobile # */}
 
                         <div className='flex flex-col'>
-                            <label htmlFor="">Mobile Number</label>
-                            <input type="text" placeholder='09xx-xxx-xxxx' className='w-[full] border-2 border-black rounded-xl p-2' />
+                            <label htmlFor="">Email</label>
+                            <input type="text" placeholder='juandelacruz@domain.com' className='w-[full] border-2 border-black rounded-xl p-2' />
                         </div>
 
                         {/* Password */}
