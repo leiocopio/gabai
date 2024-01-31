@@ -100,6 +100,21 @@ export default function PopupComponent() {
                                 <label htmlFor="">City</label>
                                 <select name="city" id="city" className='w-[12rem] border-2 border-black rounded-xl p-2'>
                                     <option value=""> -Choose your city- </option>
+                                    <option value=""> -Caloocan North City- </option>
+                                    <option value=""> -Caloocan South City- </option>
+                                    <option value=""> -Las Piñas City- </option>
+                                    <option value=""> -Makati City- </option>
+                                    <option value=""> -Malabon City- </option>
+                                    <option value=""> -Mandaluyong City- </option>
+                                    <option value=""> -Manila City- </option>
+                                    <option value=""> -Marikina City- </option>
+                                    <option value=""> -Muntinlupa City- </option>
+                                    <option value=""> -Navotas City- </option>
+                                    <option value=""> -Parañaque City- </option>
+                                    <option value=""> -Pasay City- </option>
+                                    <option value=""> -Pasig City- </option>
+                                    <option value=""> -Quezon City- </option>
+                                    <option value=""> -San Juan City- </option>
                                 </select>
                             </div>
 
