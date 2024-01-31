@@ -4,7 +4,7 @@ function Footer() {
 
     return(
         <>
-            <footer className="h-[9.375rem] w-screen flex flex-row">
+            <footer className="bg-blue-200 h-[9.375rem] w-screen flex flex-row">
              <div>
                 <b>Location</b>
                 <br />
