@@ -39,9 +39,9 @@ function Footer() {
              <div>
                 <b>Useful Links</b>
                 <ul>
-                    <li><a href="#">Department of Labor and Deployment</a></li>
-                    <li><a href="#">National Labor Relations Commision</a></li>
-                    <li><a href="#">Official Gazette of the Philippines</a></li>
+                    <li><a href="https://clients.ncr.dole.gov.ph/home/" target='_blank'>Department of Labor and Deployment</a></li>
+                    <li><a href="https://www.foi.gov.ph/requests?agency=NLRCom" target='_blank'>National Labor Relations Commision</a></li>
+                    <li><a href="https://www.officialgazette.gov.ph" target='_blank'>Official Gazette of the Philippines</a></li>
 
                 </ul>
              </div>
