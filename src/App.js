@@ -11,6 +11,7 @@ import "./components/css/nav.css";
 import SignIn from "./components/signIn";
 import Footer from "./components/footer";
 import Results from "./pages/searchResults";
+import LandingPage from "./pages/landingPage";
 
 function App() {
   return (
@@ -61,6 +62,8 @@ function Home() {
       <div className="flex flex-col items-center justify-center h-screen">
 
         {/* Landing Page here!!! */}
+
+        <LandingPage></LandingPage>
       </div>
 
     </>
