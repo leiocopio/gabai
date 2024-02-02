@@ -15,48 +15,42 @@ import LandingPage from "./pages/landingPage";
 
 function App() {
   return (
-
     <>
       <head>
         <title>GabAI</title>
       </head>
 
-
-    <Router>
-
-
-      {/* Navigation Bar  */}
-            <nav className="h-[3.875rem] w-full px-[1.25rem] font-bold border-b-2 border-azure-500">
-        {/* Brand Name */}
-        <Link to="/">
-    <div className="text-2xl">GabAI</div>
-        </Link>
-        
-
-        {/* Search Bar */}
-        <div className="flex flex-row items-center gap-x-5">
-
-          {/* Login Btn */}
-          <SignIn />
-
-          {/* Search Icon */}
-          <Link to="/search">
-            <FaSearch className="text-2xl" />
+      <Router>
+        {/* Navigation Bar  */}
+        <nav className="h-[3.875rem] w-full px-[1.25rem] font-bold border-b-2 border-azure-500">
+          {/* Brand Name */}
+          <Link to="/">
+            <div className="text-2xl">GabAI</div>
           </Link>
 
-          {/* Toggle night mode */}
-          <BsMoon className="text-2xl" />
-        </div>
-      </nav>
+          {/* Search Bar */}
+          <div className="flex flex-row items-center gap-x-5">
+            {/* Login Btn */}
+            <SignIn />
 
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/search" element={<Search />} />
-        <Route path="/searchResults" element={<Results />} />
-      </Routes>
-    </Router>
+            {/* Search Icon */}
+            <Link to="/search">
+              <FaSearch className="text-2xl" />
+            </Link>
 
-    <Footer></Footer>
+            {/* Toggle night mode */}
+            <BsMoon className="text-2xl" />
+          </div>
+        </nav>
+
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/search" element={<Search />} />
+          <Route path="/searchResults" element={<Results />} />
+        </Routes>
+      </Router>
+
+      <Footer></Footer>
     </>
   );
 }
@@ -64,15 +58,12 @@ function App() {
 function Home() {
   return (
     <>
-
       {/* Main Content */}
-      <div className="flex flex-col h-screen">
-
+      <div className="flex flex-col items-center justify-center h-screen">
         {/* Landing Page here!!! */}
 
         <LandingPage></LandingPage>
       </div>
-
     </>
   );
 }
