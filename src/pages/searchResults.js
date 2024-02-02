@@ -37,7 +37,7 @@
 
                         <div className='flex flex-row gap-2'>
 
-                            <input type="text" placeholder='Search' className='w-[50rem] border-2 border-black rounded-xl p-2' value={searchQuery} onChange={e => setSearchQuery(e.target.value)} />
+                            <input type="text" placeholder='Search' className='w-[40rem] max-md:w-[20rem] border-2 border-black rounded-xl p-2 mx-[10rem]' value={searchQuery} onChange={e => setSearchQuery(e.target.value)} />
 
                             <button className='bg-azure-500 text-white font-bold rounded-xl p-2' type="submit">Search</button>
 
@@ -55,18 +55,19 @@
     
                     <br />
     
-                    <div className="bg-gray-100 p-3 mx-[10rem] rounded-xl "> {/* Search results */}
+                    <div> {/* Search results */}
 
                         {searchResults.map((result, index) => (
 
-                            <div key={index} className="bg-gray-100 p-3 mx-[10rem] rounded-xl ">
+                            <div key={index} className="bg-gray-100 p-10 rounded-xl mt-5 mx-20 max-md:mx-1">
+                                <a href={result.link} target="_blank">
                                 <h1 className="text-2xl text-azure">{result.title}</h1>
                                 <a href={result.link} target="_blank" className="text-green-700">{result.link}</a>
 
                                 <br />
 
                                 <p>{result.snippet}</p>
-
+                                </a>
                             </div>
                         ))}
                     </div>

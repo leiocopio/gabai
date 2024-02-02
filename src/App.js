@@ -15,8 +15,15 @@ import LandingPage from "./pages/landingPage";
 
 function App() {
   return (
+
     <>
+      <head>
+        <title>GabAI</title>
+      </head>
+
+
     <Router>
+
 
       {/* Navigation Bar  */}
             <nav className="h-[3.875rem] w-full px-[1.25rem] font-bold border-b-2 border-azure-500">
@@ -59,7 +66,7 @@ function Home() {
     <>
 
       {/* Main Content */}
-      <div className="flex flex-col items-center justify-center h-screen">
+      <div className="flex flex-col h-screen">
 
         {/* Landing Page here!!! */}
 

@@ -3,6 +3,8 @@
     import axios from 'axios';
     import { BrowserRouter as Router, Routes, Route, Link, useNavigate } from "react-router-dom";
     
+    import Helmet from 'react-helmet'
+
     function Search() {
         const [searchQuery, setSearchQuery] = useState('');
         const ApiKey = process.env.REACT_APP_GOOGLE_API_KEY;
@@ -24,6 +26,11 @@
     
         return (
             <div className='flex flex-col items-center justify-center w-screen h-screen'>
+                <Helmet>
+                    <title>Search - GabAI</title>
+                </Helmet>
+
+
                 <h1 className='text-7xl text-azure'> GabAi</h1>
 
                 <br />
