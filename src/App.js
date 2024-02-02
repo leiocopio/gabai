@@ -59,7 +59,7 @@ function Home() {
     <>
 
       {/* Main Content */}
-      <div className="flex">
+      <div className="flex flex-col ">
 
         {/* Landing Page here!!! */}
 
