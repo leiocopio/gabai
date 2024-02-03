@@ -49,8 +49,7 @@ function App() {
           <Route path="/searchResults" element={<Results />} />
         </Routes>
       </Router>
-
-      <Footer></Footer>
+      <Footer />
     </>
   );
 }
@@ -59,10 +58,11 @@ function Home() {
   return (
     <>
       {/* Main Content */}
-      <div className="flex flex-col h-screen">
+      <div className="flex flex-col">
         {/* Landing Page here!!! */}
-
-        <LandingPage></LandingPage>
+        <div className="flex flex-col items-center justify-center">
+          <LandingPage />
+        </div>
       </div>
     </>
   );
