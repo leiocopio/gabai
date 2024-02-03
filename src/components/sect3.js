@@ -11,9 +11,9 @@ function sect3() {
 
       <br />
 
-      <div className=" flex flex-row justify-center items-center gap-5 max-md:flex-col">
-        <div class="bg-gray-100 w-[30rem] h-[30rem] flex flex-col justify-center items-center">
-          <div className="flex justify-center items-center">
+      <div className=" flex flex-row justify-center items-center gap-5 max-md:flex-col ">
+        <div class="bg-gray-100 w-[30rem] h-[30rem] flex flex-col justify-center items-center landing-section">
+          <div className="flex justify-center items-center ">
             <img
               class="h-20 w-20 object-cover rounded-full"
               src={Convo}
@@ -28,7 +28,7 @@ function sect3() {
           </p>
         </div>
 
-        <div class="bg-gray-100 w-[30rem] h-[30rem] flex flex-col justify-center items-center">
+        <div class="bg-gray-100 w-[30rem] h-[30rem] flex flex-col justify-center items-center landing-section">
           <div className="flex justify-center items-center">
             <img
               class="h-15 w-15 object-cover rounded-full"
@@ -45,7 +45,7 @@ function sect3() {
           </p>
         </div>
 
-        <div class="bg-gray-100 w-[30rem] h-[30rem] flex flex-col justify-center items-center">
+        <div class="bg-gray-100 w-[30rem] h-[30rem] flex flex-col justify-center items-center landing-section">
           <div className="flex justify-center items-center">
             <img
               class="h-30 w-30 object-cover rounded-full"
