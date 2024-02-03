@@ -13,6 +13,7 @@ import Footer from "./components/footer";
 import Results from "./pages/searchResults";
 import LandingPage from "./pages/landingPage";
 
+
 function App() {
   return (
     <>

@@ -1,11 +1,10 @@
 import Popup from 'reactjs-popup';
 import { IoIosCloseCircleOutline } from "react-icons/io";
-import SignUp from "./signUp";
-import SetPassword from './setnewpassword';
+import SignIn from './signIn'
 
 export default function PopupComponent() {
   return (
-    <Popup trigger={<button>Login</button>} modal nested>
+    <Popup trigger={<button>Forgot Password</button>} modal nested>
       {(close) => (
         <div className="modal h-[28rem] w-[31.25rem] rounded-2xl bg-white flex flex-col mx-10">
 
@@ -13,26 +12,25 @@ export default function PopupComponent() {
             <IoIosCloseCircleOutline className='text-3xl cursor-pointer' onClick={() => close()} />
           </div>
           <div className='flex flex-col items-center justify-center'>
-            <h1 className='font-bold text-4xl'>Sign In to <span className='text-azure'>GabAi</span></h1>
-            <p>Empower your workplace today</p>
+            <h1 className='font-bold text-4xl'>Set new <span className='text-azure'>Password</span></h1>
+            <p>Make sure to set a new robust password</p>
           </div>
           <span className='py-2'></span>
           <div className='flex flex-col items-center justify-center'>
-            <input type="text" placeholder='Username' className='w-[25rem] border-2 border-black rounded-xl p-2' />
+           <p>Set new Password</p>
+         <input type="text" placeholder='• • • • • • • •' className='w-[25rem] border-2 border-black rounded-xl p-2' />
             <span className='py-2'></span>
-            <input type="password" placeholder='Password' className='w-[25rem] border-2 border-black rounded-xl p-2' />
-          </div>
-          <div className='flex flex-row mx-12 mt-4'>
-            <SetPassword/>
+            <p>Repeat new Password</p>
+            <input type="password" placeholder='• • • • • • • •' className='w-[25rem] border-2 border-black rounded-xl p-2' />
           </div>
           <br />
 
           <div className='mx-12'>
-            <button className='w-full bg-azure-500 text-white font-bold rounded-xl p-2'>Sign In</button>
+            <button className='w-full bg-azure-500 text-white font-bold rounded-xl p-2'>Confirm</button>
           </div>
           <br />
           <div className='flex flex-row items-center justify-center'>
-            <p>Don't have an account? <SignUp /> </p>
+            <p>Already have an account? <SignIn /> </p>
           </div>
 
 
