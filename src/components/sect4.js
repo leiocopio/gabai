@@ -1,7 +1,7 @@
 function sect4(){
     return (
-        <div >
-
+        <div>
+            <p>Sect 4</p>
         </div>
     )
 }
