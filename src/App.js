@@ -12,7 +12,7 @@ import SignIn from "./components/signIn";
 import Footer from "./components/footer";
 import Results from "./pages/searchResults";
 import LandingPage from "./pages/landingPage";
-
+import Terms from "./components/ToC";
 
 function App() {
   return (
@@ -48,6 +48,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/search" element={<Search />} />
           <Route path="/searchResults" element={<Results />} />
+          <Route path="ToC" element={<Terms />} />
         </Routes>
       </Router>
       <Footer />
