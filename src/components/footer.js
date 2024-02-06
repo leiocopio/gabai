@@ -6,7 +6,7 @@ function Footer() {
   return (
     <>
       <footer
-        className="h-auto w-screen flex flex-row gap-10
+        className="h-auto w-full flex flex-row gap-10
       max-md:flex-col
       "
       >
@@ -19,9 +19,9 @@ function Footer() {
             Caloocan, Metro Manila, Philippines 1105
           </p>
         </div>
-        <div>
+        <div className="flex flex-col gap-2">
           <b>Contacts</b>
-          <br />
+
           <div className="flex flex-col">
             <ul className="">
               <li className="flex flex-row gap-2">
@@ -48,9 +48,9 @@ function Footer() {
           </div>
         </div>
 
-        <div>
+        <div className="flex flex-col gap-2">
           <b>Legal</b>
-          <br />
+
           <ul>
             <li>
               <a href="#">Cookies</a>
@@ -59,15 +59,15 @@ function Footer() {
               <a href="#">Privacy</a>
             </li>
             <li>
-              <a href="./html/terms.htm">Terms</a>
+              <a href="#">Terms</a>
             </li>
             <li>
-              <a href="#">EULA</a>
+              <a href="#">User Agreement</a>
             </li>
           </ul>
         </div>
 
-        <div>
+        <div className="flex flex-col gap-2">
           <b>Useful Links</b>
           <ul>
             <li>

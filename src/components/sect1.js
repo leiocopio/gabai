@@ -15,7 +15,8 @@ const WorkplaceDiscriminationLaws = () => {
         <div>
           <h1
             className="
-            text-6xl font-bold mb-4 
+            text-6xl font-bold mb-4
+            leading-normal
             max-md:text-center
             max-md:mx-1
           "
