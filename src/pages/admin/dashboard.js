@@ -34,14 +34,34 @@ function Sidebar() {
 }
 
 function AdminDashboard() {
+  const name = "Admin";
   return (
     <>
-      <div className="flex flex-col justify-center h-screen">
+      <div className="flex flex-row h-screen">
         <div>
           <Sidebar />
         </div>
 
-        <div>{/* Contents */}</div>
+        <div>
+          {/* Contents */}
+          <div>
+            <h1>Welcome, {name}!</h1>
+          </div>
+
+          <div className="flex flex-row gap-1 items-center align-center">
+            {/* Shows the Number of Users, Cases, etc. */}
+
+            <div className="border-2 rounded-xl border-azure-400 h-[10rem] w-[30rem] ">
+              Total No. of Users
+            </div>
+            <div className="border-2 rounded-xl border-azure-400 h-[10rem] w-[30rem] ">
+              Total No. of Cases
+            </div>
+            <div className="border-2 rounded-xl border-azure-400 h-[10rem] w-[30rem] ">
+              Total No. of Feedbacks
+            </div>
+          </div>
+        </div>
       </div>
     </>
   );
