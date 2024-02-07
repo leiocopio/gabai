@@ -13,6 +13,35 @@ import Footer from "./components/footer";
 import Results from "./pages/searchResults";
 import LandingPage from "./pages/landingPage";
 import Terms from "./components/ToC";
+import Admin from "./pages/admin/dashboard";
+
+function Header() {
+  return (
+    <>
+      {/* Navigation Bar  */}
+      <nav className="h-[3.875rem] w-full px-[1.25rem] font-bold border-b-2 border-azure-500">
+        {/* Brand Name */}
+        <Link to="/">
+          <div className="text-2xl">GabAI</div>
+        </Link>
+
+        {/* Search Bar */}
+        <div className="flex flex-row items-center gap-x-5">
+          {/* Login Btn */}
+          <SignIn />
+
+          {/* Search Icon */}
+          <Link to="/search">
+            <FaSearch className="text-2xl" />
+          </Link>
+
+          {/* Toggle night mode */}
+          <BsMoon className="text-2xl" />
+        </div>
+      </nav>
+    </>
+  );
+}
 
 function App() {
   return (
@@ -22,33 +51,13 @@ function App() {
       </head>
 
       <Router>
-        {/* Navigation Bar  */}
-        <nav className="h-[3.875rem] w-full px-[1.25rem] font-bold border-b-2 border-azure-500">
-          {/* Brand Name */}
-          <Link to="/">
-            <div className="text-2xl">GabAI</div>
-          </Link>
-
-          {/* Search Bar */}
-          <div className="flex flex-row items-center gap-x-5">
-            {/* Login Btn */}
-            <SignIn />
-
-            {/* Search Icon */}
-            <Link to="/search">
-              <FaSearch className="text-2xl" />
-            </Link>
-
-            {/* Toggle night mode */}
-            <BsMoon className="text-2xl" />
-          </div>
-        </nav>
-
+        <Header />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/search" element={<Search />} />
           <Route path="/searchResults" element={<Results />} />
           <Route path="ToC" element={<Terms />} />
+          <Route path="/admin" element={<Admin />} />
         </Routes>
       </Router>
       <Footer />
