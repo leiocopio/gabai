@@ -14,6 +14,7 @@ import Results from "./pages/searchResults";
 import LandingPage from "./pages/landingPage";
 import Terms from "./components/ToC";
 import Admin from "./pages/admin/dashboard";
+import Logo from "./img.sec1/Logo.png";
 
 function Header() {
   return (
@@ -22,11 +23,13 @@ function Header() {
       <nav className="h-[3.875rem] w-full px-[1.25rem] font-bold border-b-2 border-azure-500">
         {/* Brand Name */}
         <Link to="/">
-          <div className="text-2xl">GabAI</div>
+         <div className="">
+          <img src={Logo} alt="Logo" style={{ height: '40px' }} />
+         </div>
         </Link>
 
         {/* Search Bar */}
-        <div className="flex flex-row items-center gap-x-5">
+        <div className="flex flex-row items-center text-2xl gap-x-5">
           {/* Login Btn */}
           <SignIn />
 

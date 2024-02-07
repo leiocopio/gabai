@@ -3,11 +3,11 @@ import sec2 from "../components/img/sec2.png";
 function sect2() {
   return (
     <div
-      className="
+      className="bg-gray-100
       h-screen
-      flex flex-row justify-around items-center mx-[15rem]
+      flex flex-row justify-around items-center px-[15rem]
       max-md:flex-col
-      max-md:mx-2
+      max-md:px-2
       "
     >
       <div className="flex justify-center items-center shrink-0">
