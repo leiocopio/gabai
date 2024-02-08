@@ -14,6 +14,9 @@ import Results from "./pages/searchResults";
 import LandingPage from "./pages/landingPage";
 import Terms from "./components/ToC";
 import Admin from "./pages/admin/dashboard";
+import UserList from "./pages/useroflist";
+import Cases from "./pages/admin/cases";
+import FeedBacks from "./pages/feedbacks";
 
 function Header() {
   return (
@@ -58,6 +61,10 @@ function App() {
           <Route path="/searchResults" element={<Results />} />
           <Route path="ToC" element={<Terms />} />
           <Route path="/admin" element={<Admin />} />
+          <Route path="/admin/users" element={<UserList />} /> 
+          <Route path="/admin/cases" element={<Cases />} /> 
+          <Route path="/admin/feedbacks" element={<FeedBacks />} /> 
+          
         </Routes>
       </Router>
       <Footer />
