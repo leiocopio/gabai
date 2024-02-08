@@ -4,7 +4,7 @@ import Convo from "../img.sec1/convo.png";
 
 function sect3() {
   return (
-    <div class="mt-7 flex flex-col justify-center items-center h-[50rem] text-3xl text-center text-black h-auto">
+    <div class="mt-7 flex flex-col justify-center items-center h-screen text-3xl text-center text-black h-auto">
       <h1 className="justify-center text-center text-6xl font-bold">
         <span className="font-bold text-azure">GabAi </span>Features
       </h1>

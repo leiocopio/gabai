@@ -4,7 +4,7 @@ import SignIn from './signIn'
 
 export default function PopupComponent() {
   return (
-    <Popup trigger={<button>Forgot Password</button>} modal nested>
+    <Popup trigger={<button>Forgot Password?</button>} modal nested>
       {(close) => (
         <div className="modal h-[28rem] w-[31.25rem] rounded-2xl bg-white flex flex-col mx-10">
 
@@ -16,12 +16,18 @@ export default function PopupComponent() {
             <p>Make sure to set a new robust password</p>
           </div>
           <span className='py-2'></span>
+         <div className='ml-12'>
+         <p>Set new password</p>
+         </div>
           <div className='flex flex-col items-center justify-center'>
-           <p>Set new Password</p>
-         <input type="text" placeholder='• • • • • • • •' className='w-[25rem] border-2 border-black rounded-xl p-2' />
+            <input type="text" placeholder='• • • • • • • •' className='w-[25rem] border-2 border-black rounded-xl p-2' />
+            </div>
             <span className='py-2'></span>
-            <p>Repeat new Password</p>
-            <input type="password" placeholder='• • • • • • • •' className='w-[25rem] border-2 border-black rounded-xl p-2' />
+            <div className= 'ml-12'>
+            <p>Repeat new password</p>
+            </div>
+            <div className='flex flex-col items-center justify-center'>
+           <input type="password" placeholder='• • • • • • • •' className='w-[25rem] border-2 border-black rounded-xl p-2' />
           </div>
           <br />
 

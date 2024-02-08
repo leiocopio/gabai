@@ -14,7 +14,7 @@ const CallToAction = () => {
           GabAi helps you and the many others to shout their voices and be
           heard!
         </p>
-        <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+        <button className="bg-azure hover:bg-blue-700 text-white font-bold p-3 rounded-lg  h-55 w-[15rem]">
           Join now!
         </button>
       </div>

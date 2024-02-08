@@ -12,30 +12,24 @@ import SignIn from "./components/signIn";
 import Footer from "./components/footer";
 import Results from "./pages/searchResults";
 import LandingPage from "./pages/landingPage";
+import Terms from "./components/ToC";
+import Admin from "./pages/admin/dashboard";
+import Logo from "./img.sec1/Logo.png";
 
-function App() {
+function Header() {
   return (
-
     <>
-      <head>
-        <title>GabAI</title>
-      </head>
-
-
-    <Router>
-
-
       {/* Navigation Bar  */}
-            <nav className="h-[3.875rem] w-full px-[1.25rem] font-bold border-b-2 border-azure-500">
+      <nav className="h-[3.875rem] w-full px-[1.25rem] font-bold border-b-2 border-azure-500">
         {/* Brand Name */}
         <Link to="/">
-    <div className="text-2xl">GabAI</div>
+         <div className="">
+          <img src={Logo} alt="Logo" style={{ height: '40px' }} />
+         </div>
         </Link>
-        
 
         {/* Search Bar */}
-        <div className="flex flex-row items-center gap-x-5">
-
+        <div className="flex flex-row items-center text-md gap-x-5">
           {/* Login Btn */}
           <SignIn />
 
@@ -48,15 +42,28 @@ function App() {
           <BsMoon className="text-2xl" />
         </div>
       </nav>
+    </>
+  );
+}
 
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/search" element={<Search />} />
-        <Route path="/searchResults" element={<Results />} />
-      </Routes>
-    </Router>
+function App() {
+  return (
+    <>
+      <head>
+        <title>GabAI</title>
+      </head>
 
-    <Footer></Footer>
+      <Router>
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/search" element={<Search />} />
+          <Route path="/searchResults" element={<Results />} />
+          <Route path="ToC" element={<Terms />} />
+          <Route path="/admin" element={<Admin />} />
+        </Routes>
+      </Router>
+      <Footer />
     </>
   );
 }
@@ -64,15 +71,13 @@ function App() {
 function Home() {
   return (
     <>
-
       {/* Main Content */}
-      <div className="flex flex-col h-screen">
-
+      <div className="flex flex-col">
         {/* Landing Page here!!! */}
-
-        <LandingPage></LandingPage>
+        <div className="flex flex-col items-center justify-center">
+          <LandingPage />
+        </div>
       </div>
-
     </>
   );
 }
