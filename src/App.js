@@ -1,3 +1,10 @@
+/**
+ * App is the root component that renders the overall application.
+ *
+ * It renders the Header navigation bar and Footer components.
+ * It configures React Router with Routes for the main pages.
+ * It renders the main Home page content.
+ */
 import "./App.css";
 
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
