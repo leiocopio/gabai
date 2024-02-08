@@ -4,7 +4,7 @@ import Convo from "../img.sec1/convo.png";
 
 function sect3() {
   return (
-    <div class="mt-7 flex flex-col justify-center items-center h-screen text-3xl text-center text-black h-auto">
+    <div class="mt-7 flex flex-col justify-center items-center h-[50rem] text-3xl text-center text-black h-auto">
       <h1 className="justify-center text-center text-6xl font-bold">
         <span className="font-bold text-azure">GabAi </span>Features
       </h1>
@@ -12,7 +12,7 @@ function sect3() {
       <br />
 
       <div className=" flex flex-row justify-center items-center gap-5 max-md:flex-col ">
-        <div class="bg-gray-100 w-[30rem] h-[30rem] flex flex-col justify-center items-center landing-section">
+        <div class=" w-[30rem] h-[30rem] flex flex-col justify-center items-center landing-section">
           <div className="flex justify-center items-center ">
             <img
               class="h-20 w-20 object-cover rounded-full"
@@ -28,7 +28,7 @@ function sect3() {
           </p>
         </div>
 
-        <div class="bg-gray-100 w-[30rem] h-[30rem] flex flex-col justify-center items-center landing-section">
+        <div class=" w-[30rem] h-[30rem] flex flex-col justify-center items-center landing-section">
           <div className="flex justify-center items-center">
             <img
               class="h-15 w-15 object-cover rounded-full"
@@ -45,7 +45,7 @@ function sect3() {
           </p>
         </div>
 
-        <div class="bg-gray-100 w-[30rem] h-[30rem] flex flex-col justify-center items-center landing-section">
+        <div class=" w-[30rem] h-[30rem] flex flex-col justify-center items-center landing-section">
           <div className="flex justify-center items-center">
             <img
               class="h-30 w-30 object-cover rounded-full"
