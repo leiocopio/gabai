@@ -1,5 +1,6 @@
 import Law from "../components/img/Law.png";
 
+
 const WorkplaceDiscriminationLaws = () => {
   return (
     <div
@@ -15,7 +16,7 @@ const WorkplaceDiscriminationLaws = () => {
         <div>
           <h1
             className="
-            text-6xl font-bold mb-4
+            text-4xl font-bold mb-4
             leading-normal
             max-md:text-center
             max-md:mx-1
@@ -26,7 +27,7 @@ const WorkplaceDiscriminationLaws = () => {
             Workplace<span className="text-azure"> Discrimination</span>
           </h1>
           <br />
-          <p className="text-lg mb-4 max-md:text-center">
+          <p className="text-1xl mb-4 max-md:text-center">
             Explore our guide on workplace discrimination laws in the
             Philippines to gain insights
             <br /> into legal protections, employee rights, and the creation of
@@ -46,6 +47,7 @@ const WorkplaceDiscriminationLaws = () => {
 
         <div className="grid items-center">
           <img src={Law} alt="law " className=" w-[30rem]" />
+          
         </div>
       </div>
     </div>

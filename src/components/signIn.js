@@ -5,7 +5,7 @@ import SetPassword from "./setnewpassword";
 
 export default function PopupComponent() {
   return (
-    <Popup trigger={<button>Login</button>} modal nested>
+    <Popup trigger={<button className="border-2 rounded-xl p-2 border-azure">Login</button>} modal nested>
       {(close) => (
         <div className="modal h-[28rem] w-[31.25rem] rounded-2xl bg-white flex flex-col mx-10">
           <div className="flex flex-row align-center justify-end p-1">

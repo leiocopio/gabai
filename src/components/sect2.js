@@ -4,7 +4,7 @@ function sect2() {
   return (
     <div
       className="bg-gray-100
-      h-screen
+      h-[40rem]
       flex flex-row justify-around items-center px-[15rem]
       max-md:flex-col
       max-md:px-2
