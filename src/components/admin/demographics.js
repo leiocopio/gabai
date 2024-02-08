@@ -1,3 +1,6 @@
+//Components and Pages
+import AgeDemog from "./ageDemog";
+
 function UserDemographics() {
   // TODO: Implement this component
   return (
@@ -6,10 +9,7 @@ function UserDemographics() {
         <div className="flex flex-col w-full p-1 my-4 ">
           <ul className="flex flex-row justify-between gap-1 items-start text-white">
             <li className="border-2 w-full border-white p-1 rounded-xl">Sex</li>
-            <li className="border-2 w-full border-white p-1 rounded-xl">
-              {" "}
-              Age
-            </li>
+            <li className="border-2 w-full border-white p-1 rounded-xl">Age</li>
             <li className="border-2 w-full border-white p-1 rounded-xl">
               Location
             </li>
@@ -18,7 +18,9 @@ function UserDemographics() {
 
         {/* TODO: Graph */}
 
-        <div></div>
+        <div>
+          <AgeDemog />
+        </div>
       </div>
     </div>
   );
