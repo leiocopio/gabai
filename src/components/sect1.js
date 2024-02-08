@@ -37,7 +37,7 @@ const WorkplaceDiscriminationLaws = () => {
           <div className="flex max-md:justify-center">
             <button
               className="
-              bg-azure text-white p-3 rounded-lg
+              bg-azure hover:bg-blue-700 text-white p-3 rounded-lg
               h-55 w-25 max-md:w-32 lg:w-48"
             >
               Let's talk!
@@ -46,7 +46,7 @@ const WorkplaceDiscriminationLaws = () => {
         </div>
 
         <div className="grid items-center">
-          <img src={Law} alt="law " className=" w-[30rem]" />
+          <img src={Law} alt="law " className="w-[30rem]" />
           
         </div>
       </div>

@@ -4,7 +4,7 @@ function sect2() {
   return (
     <div
       className="bg-gray-100
-      h-[40rem]
+      h-screen
       flex flex-row justify-around items-center px-[15rem]
       max-md:flex-col
       max-md:px-2
@@ -24,7 +24,7 @@ function sect2() {
         </h1>
         <br />
         <p
-          className="text-justify text-2xl
+          className="text-justify text-xl
         leading-loose
         max-md:text-center"
         >

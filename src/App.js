@@ -29,7 +29,7 @@ function Header() {
         </Link>
 
         {/* Search Bar */}
-        <div className="flex flex-row items-center text-2xl gap-x-5">
+        <div className="flex flex-row items-center text-md gap-x-5">
           {/* Login Btn */}
           <SignIn />
 

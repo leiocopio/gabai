@@ -2,8 +2,9 @@
     import React, { useState } from 'react';
     import axios from 'axios';
     import { BrowserRouter as Router, Routes, Route, Link, useNavigate } from "react-router-dom";
-    
+    import { IoSearchOutline } from "react-icons/io5";
     import Helmet from 'react-helmet'
+    import Logo from "../img.sec1/Logo.png";
 
     function Search() {
         const [searchQuery, setSearchQuery] = useState('');
@@ -31,20 +32,22 @@
                 </Helmet>
 
 
-                <h1 className='text-7xl text-azure'> GabAi</h1>
+                <h1 className=''>
+                    <img src={Logo} alt="Logo" style={{ height: '80px' }} />
+                    </h1>
 
                 <br />
 
-                <p className='text-2xl'>Navigate the legal landscape of workplace discrimination</p>
+                <p className='text-md'>Navigate the legal landscape of workplace discrimination</p>
 
                 <br />
                 
                 <form onSubmit={handleSearch}>
 
                     <div className='flex flex-row gap-2'>
-                        <input type="text" placeholder='Search' className='w-[50rem] border-2 border-black rounded-xl p-2' value={searchQuery} onChange={e => setSearchQuery(e.target.value)} />
+                        <input type="text" placeholder='Search here' className='w-[40rem] border-2 border-black rounded-full p-4' value={searchQuery} onChange={e => setSearchQuery(e.target.value)} />
 
-                        <button className='bg-azure-500 text-white font-bold rounded-xl p-2' type="submit">Search</button>
+                        <button className='ml-[-4rem] text-4xl text-azure z-10' type="submit"><IoSearchOutline /></button>
                     </div>
 
                 </form>
