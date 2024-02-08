@@ -5,7 +5,8 @@
     import React, { useState } from 'react';
     import axios from 'axios';
     import { BrowserRouter as Router, Routes, Route, Link, useNavigate } from "react-router-dom";
-    
+    import { IoSearchOutline } from "react-icons/io5";
+
     function SearchResults() {
 
         const location = useLocation();
@@ -37,10 +38,10 @@
 
                         <div className='flex flex-row gap-2'>
 
-                            <input type="text" placeholder='Search' className='w-[40rem] max-md:w-[20rem] border-2 border-black rounded-xl p-2 mx-[10rem]' value={searchQuery} onChange={e => setSearchQuery(e.target.value)} />
+                        <input type="text" placeholder='Search' className='w-[40rem] border-2 border-black rounded-full p-4' value={searchQuery} onChange={e => setSearchQuery(e.target.value)} />
 
-                            <button className='bg-azure-500 text-white font-bold rounded-xl p-2' type="submit">Search</button>
 
+                            <button className='ml-[-4rem] text-4xl text-azure z-10' type="submit"><IoSearchOutline /></button>
                         </div>
 
                     </form>
