@@ -1,11 +1,10 @@
 //Components and Pages
-import AgeDemog from "./ageDemog";
+import SexDemog from "./sexDemog";
 
 function UserDemographics() {
-  // TODO: Implement this component
   return (
     <div>
-      <div className="flex flex-col bg-gray-300 w-full h-[10rem] mx-10 my-5 rounded-xl">
+      <div className="flex flex-col bg-gray-300 w-full h-auto mx-10 my-5 rounded-xl">
         <div className="flex flex-col w-full p-1 my-4 ">
           <ul className="flex flex-row justify-between gap-1 items-start text-white">
             <li className="border-2 w-full border-white p-1 rounded-xl">Sex</li>
@@ -19,7 +18,7 @@ function UserDemographics() {
         {/* TODO: Graph */}
 
         <div>
-          <AgeDemog />
+          <SexDemog />
         </div>
       </div>
     </div>
