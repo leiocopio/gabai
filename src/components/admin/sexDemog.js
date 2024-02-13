@@ -1,51 +1,51 @@
-import { BarChart } from "@mui/x-charts/BarChart";
+import React from "react";
+import { BarChart, PieChart } from "@mui/x-charts";
 
-function MyBarGraph() {
-  return (
-    <BarChart
-      xAxis={[{ scaleType: "band", data: ["Sex"] }]}
-      series={[
-        { data: [100], label: "Male", color: "#38BDF8" },
-        { data: [20], label: "Female", color: "#F472B6" },
-      ]}
-      width={250}
-      height={300}
-    />
-  );
-}
+// Data for the Bar Graph and Pie Chart
+var maleCount = 10;
+var femaleCount = 50;
 
-function PieChart() {
-  return (
-    <PieChart
-      series={[
-        {
-          data: [
-            { id: 0, value: 10, label: "series A" },
-            { id: 1, value: 15, label: "series B" },
-            { id: 2, value: 20, label: "series C" },
-          ],
-        },
-      ]}
-      width={400}
-      height={200}
-    />
-  );
-}
+const MyBarGraph = React.memo(() => (
+  <BarChart
+    xAxis={[{ scaleType: "band", data: ["Sex"] }]}
+    series={[
+      { data: [maleCount], label: "Male", color: "#38BDF8" },
+      { data: [femaleCount], label: "Female", color: "#F472B6" },
+    ]}
+    width={250}
+    height={300}
+  />
+));
 
-function Age() {
+const PieChartComponent = React.memo(() => (
+  <PieChart
+    series={[
+      {
+        data: [
+          { id: 0, value: maleCount, label: "Male", color: "#38BDF8" },
+          { id: 1, value: femaleCount, label: "Female", color: "#F472B6" },
+        ],
+      },
+    ]}
+    width={400}
+    height={200}
+  />
+));
+
+function Sex() {
   return (
-    <div>
+    <div className="flex flex-row gap-1 items-center justify-center w-[75vw] text-azure">
       <div>
-        {/* TODO: Bar Graph */}
+        {/* Bar Graph */}
         <MyBarGraph />
       </div>
 
       <br />
       <div>
-        <PieChart></PieChart>
+        <PieChartComponent />
       </div>
     </div>
   );
 }
 
-export default Age;
+export default Sex;
