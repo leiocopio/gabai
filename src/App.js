@@ -9,6 +9,11 @@ import "./App.css";
 
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import React from "react";
+
+//Modules
+import Helmet from "react-helmet";
+
+//icons
 import { FaSearch } from "react-icons/fa";
 import { BsMoon } from "react-icons/bs";
 
@@ -30,9 +35,9 @@ function Header() {
       <nav className="h-[3.875rem] w-full px-[1.25rem] font-bold border-b-2 border-azure-500">
         {/* Brand Name */}
         <Link to="/">
-         <div className="">
-          <img src={Logo} alt="Logo" style={{ height: '40px' }} />
-         </div>
+          <div className="">
+            <img src={Logo} alt="Logo" style={{ height: "40px" }} />
+          </div>
         </Link>
 
         {/* Search Bar */}
@@ -53,12 +58,12 @@ function Header() {
   );
 }
 
-function App() {
+const App = () => {
   return (
     <>
-      <head>
+      <Helmet>
         <title>GabAI</title>
-      </head>
+      </Helmet>
 
       <Router>
         <Header />
@@ -73,9 +78,9 @@ function App() {
       <Footer />
     </>
   );
-}
+};
 
-function Home() {
+const Home = () => {
   return (
     <>
       {/* Main Content */}
@@ -87,6 +92,6 @@ function Home() {
       </div>
     </>
   );
-}
+};
 
 export default App;
