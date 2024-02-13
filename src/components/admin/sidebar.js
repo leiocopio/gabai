@@ -2,6 +2,7 @@
 import { FaUsers } from "react-icons/fa6";
 import { LiaBalanceScaleSolid } from "react-icons/lia";
 import { VscFeedback } from "react-icons/vsc";
+import { Link } from "react-router-dom";
 
 function Sidebar() {
   return (
@@ -12,19 +13,28 @@ function Sidebar() {
           <br />
           <div className="my-[10rem]"></div>
           <nav className="flex flex-col gap-10 list-none items-start text-black">
-            <li className="flex flex-row gap-2 text-2xl">
-              <FaUsers className="text-3xl" />
-              Users
+            <li>
+              <Link to="/admin/users" className="flex flex-row gap-2 text-2xl">
+                <FaUsers className="text-3xl" />
+                Users
+              </Link>
             </li>
 
-            <li className="flex flex-row gap-2 text-2xl">
-              <LiaBalanceScaleSolid className="text-3xl" />
-              Cases
+            <li>
+              <Link to="/admin/cases" className="flex flex-row gap-2 text-2xl">
+                <LiaBalanceScaleSolid className="text-3xl" />
+                Cases
+              </Link>
             </li>
 
-            <li className="flex flex-row gap-2 text-2xl">
-              <VscFeedback className="text-3xl" />
-              Feedbacks
+            <li>
+              <Link
+                to="/admin/feedbacks"
+                className="flex flex-row gap-2 text-2xl"
+              >
+                <VscFeedback className="text-3xl" />
+                Feedbacks
+              </Link>
             </li>
           </nav>
         </div>

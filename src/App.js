@@ -27,6 +27,9 @@ import LandingPage from "./pages/landingPage";
 import Terms from "./components/ToC";
 import Admin from "./pages/admin/dashboard";
 import Logo from "./img.sec1/Logo.png";
+import UserList from "./pages/admin/useroflist";
+import CasesList from "./pages/admin/cases";
+import FeedbacksList from "./pages/admin/feedbacks";
 
 function Header() {
   return (
@@ -36,7 +39,7 @@ function Header() {
         {/* Brand Name */}
         <Link to="/">
           <div className="">
-            <img src={Logo} alt="Logo" style={{ height: "40px" }} />
+            <img src={Logo} alt="Logo" style={{ height: "25px" }} />
           </div>
         </Link>
 
@@ -73,6 +76,9 @@ const App = () => {
           <Route path="/searchResults" element={<Results />} />
           <Route path="ToC" element={<Terms />} />
           <Route path="/admin" element={<Admin />} />
+          <Route path="/admin/users" element={<UserList />} />
+          <Route path="/admin/cases" element={<CasesList />} />
+          <Route path="/admin/feedbacks" element={<FeedbacksList />} />
         </Routes>
       </Router>
       <Footer />
