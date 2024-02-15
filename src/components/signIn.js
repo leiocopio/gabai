@@ -7,6 +7,7 @@ export default function PopupComponent() {
   return (
     <Popup trigger={<button className="border-2 rounded-xl p-4 py-1.5 border-azure">Log in</button>} modal nested>
       {(close) => (
+        <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center z-50 backdrop-filter backdrop-blur-lg bg-opacity-25 bg-black ">
         <div className="modal h-[28rem] w-[31.25rem] rounded-2xl bg-white flex flex-col mx-10">
           <div className="flex flex-row align-center justify-end p-1">
             <IoIosCloseCircleOutline
@@ -50,6 +51,7 @@ export default function PopupComponent() {
               Don't have an account? <SignUp />{" "}
             </p>
           </div>
+        </div>
         </div>
       )}
     </Popup>
