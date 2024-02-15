@@ -1,3 +1,30 @@
+import React from "react";
+
+//Modules
+import Helmet from "react-helmet";
+
+//icons
+import { BsMoon } from "react-icons/bs";
+import { FaSearch } from "react-icons/fa";
+
+//images
+import Logo from "./img/Logo.png";
+
+//Components and Pages
+import "./css/nav.css";
+import Admin from "./pages/admin/dashboard";
+import CasesList from "./pages/admin/cases";
+import FeedbacksList from "./pages/admin/feedbacks";
+import Footer from "./components/footer";
+import LandingPage from "./pages/landingPage";
+import Results from "./pages/search/results";
+import Search from "./pages/search/search";
+import SignIn from "./components/signIn";
+import Terms from "./components/terms";
+import UserList from "./pages/admin/users";
+
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+
 /**
  * App is the root component that renders the overall application.
  *
@@ -5,31 +32,9 @@
  * It configures React Router with Routes for the main pages.
  * It renders the main Home page content.
  */
-import "./App.css";
 
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import React from "react";
-
-//Modules
-import Helmet from "react-helmet";
-
-//icons
-import { FaSearch } from "react-icons/fa";
-import { BsMoon } from "react-icons/bs";
-
-//Components and Pages
-import Search from "./pages/search";
-import "./components/css/nav.css";
-import SignIn from "./components/signIn";
-import Footer from "./components/footer";
-import Results from "./pages/searchResults";
-import LandingPage from "./pages/landingPage";
-import Terms from "./components/ToC";
-import Admin from "./pages/admin/dashboard";
-import Logo from "./img.sec1/Logo.png";
-import UserList from "./pages/admin/useroflist";
-import CasesList from "./pages/admin/cases";
-import FeedbacksList from "./pages/admin/feedbacks";
+//CSS
+import "./css/App.css";
 
 function Header() {
   return (

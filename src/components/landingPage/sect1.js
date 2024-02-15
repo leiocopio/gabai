@@ -1,5 +1,4 @@
-import Law from "../components/img/Law.png";
-
+import Law from "../../img/Law.png";
 
 const WorkplaceDiscriminationLaws = () => {
   return (
@@ -47,7 +46,6 @@ const WorkplaceDiscriminationLaws = () => {
 
         <div className="grid items-center">
           <img src={Law} alt="law " className="w-[30rem]" />
-          
         </div>
       </div>
     </div>

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import "./css/footer.css";
+import "../css/footer.css";
 import { FaFacebook, FaPhone, FaMailBulk } from "react-icons/fa";
 
 function Footer() {
