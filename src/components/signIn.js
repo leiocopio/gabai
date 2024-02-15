@@ -3,7 +3,7 @@ import { IoIosCloseCircleOutline } from "react-icons/io";
 import SignUp from "./signUp";
 import SetPassword from "./newPassword";
 
-export default function PopupComponent() {
+export default function SignIn() {
   return (
     <Popup
       trigger={
@@ -56,7 +56,7 @@ export default function PopupComponent() {
             <br />
             <div className="flex flex-row items-center justify-center">
               <p>
-                Don't have an account? <SignUp />{" "}
+                Don't have an account? <SignUp />
               </p>
             </div>
           </div>

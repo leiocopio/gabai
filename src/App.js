@@ -23,18 +23,13 @@ import SignIn from "./components/signIn";
 import Terms from "./components/terms";
 import UserList from "./pages/admin/users";
 
+//Modules
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-
-/**
- * App is the root component that renders the overall application.
- *
- * It renders the Header navigation bar and Footer components.
- * It configures React Router with Routes for the main pages.
- * It renders the main Home page content.
- */
 
 //CSS
 import "./css/App.css";
+
+//Login Popup Component
 
 function Header() {
   return (

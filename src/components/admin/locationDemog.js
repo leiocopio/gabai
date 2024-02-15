@@ -45,8 +45,8 @@ const MyBarGraph = React.memo(() => (
         label: "BARMM - Bangsamoro Autonomous Region in Muslim Mindanao",
       },
     ]}
-    width={500}
-    height={500}
+    width={300}
+    height={300}
     slotProps={{
       legend: {
         direction: "row",
@@ -91,8 +91,8 @@ const PieChartComponent = React.memo(() => (
         ],
       },
     ]}
-    width={400}
-    height={500}
+    width={300}
+    height={300}
     slotProps={{
       legend: {
         direction: "row",
