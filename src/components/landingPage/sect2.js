@@ -1,4 +1,5 @@
-import sec2 from "../components/img/sec2.png";
+//import sec2 from "./img/sec2.png";
+import sec2 from "../../img/sec2.png";
 
 function sect2() {
   return (

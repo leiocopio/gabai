@@ -1,10 +1,12 @@
+//modules
 import React from "react";
 import Helmet from "react-helmet";
 
-import Sect1 from "../components/sect1";
-import Sect2 from "../components/sect2";
-import Sect3 from "../components/sect3";
-import Sect4 from "../components/sect4";
+//components
+import Sect1 from "../components/landingPage/sect1";
+import Sect2 from "../components/landingPage/sect2";
+import Sect3 from "../components/landingPage/sect3";
+import Sect4 from "../components/landingPage/sect4";
 
 function landingPage() {
   return (

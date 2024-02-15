@@ -1,11 +1,19 @@
 import Popup from "reactjs-popup";
 import { IoIosCloseCircleOutline } from "react-icons/io";
 import SignUp from "./signUp";
-import SetPassword from "./setnewpassword";
+import SetPassword from "./newPassword";
 
 export default function PopupComponent() {
   return (
-    <Popup trigger={<button className="border-2 rounded-xl p-4 py-1.5 border-azure">Log in</button>} modal nested>
+    <Popup
+      trigger={
+        <button className="border-2 rounded-xl p-4 py-1.5 border-azure">
+          Log in
+        </button>
+      }
+      modal
+      nested
+    >
       {(close) => (
         <div className="modal h-[28rem] w-[31.25rem] rounded-2xl bg-white flex flex-col mx-10">
           <div className="flex flex-row align-center justify-end p-1">

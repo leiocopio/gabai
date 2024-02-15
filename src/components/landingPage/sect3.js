@@ -1,6 +1,7 @@
-import Search from "../img.sec1/search.png";
-import PWA from "../img.sec1/pwa.png";
-import Convo from "../img.sec1/convo.png";
+//images
+import Search from "../../img/search.png";
+import PWA from "../../img/pwa.png";
+import Convo from "../../img/convo.png";
 
 function sect3() {
   return (
