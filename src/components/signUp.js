@@ -7,7 +7,8 @@ export default function PopupComponent() {
         <Popup trigger={<a href="#" className='text-azure'>Sign up here</a>} modal nested>
 
             {close => (
-                <div className="modal h-[50rem] w-[31.25rem] rounded-2xl bg-white flex flex-col mx-10">
+            <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center z-50 backdrop-filter backdrop-blur-lg bg-opacity-25 bg-black ">
+                <div className="modal h-[35rem] w-[31.25rem] rounded-2xl bg-white flex flex-col mx-10 overflow-y-auto">
                     {/* Close btn */}
 
                     <div className='flex flex-row align-center justify-end p-1'>
@@ -172,6 +173,7 @@ export default function PopupComponent() {
 
 
 
+                </div>
                 </div>
             )
             }
