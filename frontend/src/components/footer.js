@@ -8,6 +8,7 @@ function Footer() {
       <footer
         className="h-auto w-full flex flex-row gap-10
       max-md:flex-col
+      max-md:px-2
       "
       >
         <div>
@@ -25,22 +26,16 @@ function Footer() {
           <div className="flex flex-col">
             <ul className="">
               <li className="flex flex-row gap-2">
-                <div>
-                  <FaMailBulk className="text-2xl" />
-                </div>
+                <div></div>
                 <div>team.paragon.ucc.bscs@gmail.com</div>
               </li>
 
               <li className="flex flex-row gap-2">
-                <div>
-                  <FaPhone className="text-2xl" />
-                </div>
+                <div></div>
                 <div>+63 939 419 5233</div>
               </li>
               <li className="flex flex-row gap-2">
-                <div>
-                  <FaFacebook className="text-2xl" />
-                </div>
+                <div></div>
 
                 <div>GabAI</div>
               </li>

@@ -19,7 +19,7 @@ import Footer from "./components/footer";
 import LandingPage from "./pages/landingPage";
 import Results from "./pages/search/results";
 import Search from "./pages/search/search";
-import SignIn from "./components/signIn";
+import SignIn from "./components/sign-in/signIn";
 import Terms from "./components/terms";
 import UserList from "./pages/admin/users";
 import Chat from "./pages/chat/chat";

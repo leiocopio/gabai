@@ -1,7 +1,7 @@
 import Popup from "reactjs-popup";
 import { IoIosCloseCircleOutline } from "react-icons/io";
 import SignUp from "./signUp";
-import SetPassword from "./newPassword";
+import ConfirmEmail from "./confirmEmail";
 
 export default function SignIn() {
   return (
@@ -44,7 +44,7 @@ export default function SignIn() {
               />
             </div>
             <div className="flex flex-row mx-12 mt-4 text-azure">
-              <SetPassword />
+              <ConfirmEmail />
             </div>
             <br />
 
