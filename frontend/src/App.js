@@ -23,6 +23,7 @@ import SignIn from "./components/sign-in/signIn";
 import Terms from "./components/terms";
 import UserList from "./pages/admin/users";
 import Chat from "./pages/chat/chat";
+import Testing from "./pages/testing/testing";
 
 //Modules
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
@@ -85,6 +86,8 @@ const App = () => {
           <Route path="/admin/feedbacks" element={<FeedbacksList />} />
           {/* Chat Interface */}
           <Route path="/chat" element={<Chat />} />
+          {/* Testing Route for testing components */}
+          <Route path="/testing" element={<Testing />} />
         </Routes>
       </Router>
       <Footer />
