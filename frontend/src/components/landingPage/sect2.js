@@ -15,7 +15,7 @@ function sect2() {
         <img
           src={sec2}
           alt="law "
-          className="flex-shrink-0 resize-none w-[300px] bg-cover"
+          className="flex-shrink-0 resize-none w-[20rem] bg-cover"
         />
       </div>
       <div className="px-5 max-md:hidden">{/* Just to give them space*/}</div>
