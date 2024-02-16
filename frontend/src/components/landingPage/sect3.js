@@ -5,14 +5,14 @@ import Convo from "../../img/convo.png";
 
 function sect3() {
   return (
-    <div class="mt-7 flex flex-col justify-center items-center h-screen text-3xl text-center text-black h-auto">
+    <div class="mt-7 flex flex-col justify-center items-center text-3xl text-center text-black h-auto">
       <h1 className="justify-center text-center text-6xl font-bold">
         <span className="font-bold text-azure">GabAi </span>Features
       </h1>
 
       <br />
 
-      <div className=" flex flex-row justify-center items-center gap-5 max-md:flex-col ">
+      <div className=" flex flex-row justify-center items-center gap-5 max-md:flex-col w-screen">
         <div class=" w-[30rem] h-[30rem] flex flex-col justify-center items-center landing-section">
           <div className="flex justify-center items-center ">
             <img

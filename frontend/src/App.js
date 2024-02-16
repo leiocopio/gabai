@@ -22,6 +22,7 @@ import Search from "./pages/search/search";
 import SignIn from "./components/signIn";
 import Terms from "./components/terms";
 import UserList from "./pages/admin/users";
+import Chat from "./pages/chat/chat";
 
 //Modules
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
@@ -71,14 +72,19 @@ const App = () => {
       <Router>
         <Header />
         <Routes>
+          {/*  Landing Page Route  */}
           <Route path="/" element={<Home />} />
+          {/* Search Route */}
           <Route path="/search" element={<Search />} />
           <Route path="/searchResults" element={<Results />} />
           <Route path="ToC" element={<Terms />} />
+          {/*  Admin Page Route  */}
           <Route path="/admin" element={<Admin />} />
           <Route path="/admin/users" element={<UserList />} />
           <Route path="/admin/cases" element={<CasesList />} />
           <Route path="/admin/feedbacks" element={<FeedbacksList />} />
+          {/* Chat Interface */}
+          <Route path="/chat" element={<Chat />} />
         </Routes>
       </Router>
       <Footer />
