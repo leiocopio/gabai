@@ -1,7 +1,7 @@
 import Popup from "reactjs-popup";
 import { FaRegCheckCircle } from "react-icons/fa";
 
-const reload = () => {
+const reloadPage = () => {
   //Reloads the page
   window.location.reload();
 };
@@ -23,7 +23,7 @@ function passwordChanged() {
       modal
       nested
     >
-      {(reload) => (
+      {(close) => (
         <div
           className="modal h-[28rem] w-[31.25rem] 
         rounded-2xl
@@ -31,13 +31,13 @@ function passwordChanged() {
         flex flex-col items-center justify-center
         mx-10"
         >
-          <FaRegCheckCircle className="text-9xl" />
+          <FaRegCheckCircle className="text-9xl text-azure-500" />
           <br />
           <h1 className="font-bold text-2xl">
             Your password has been changed!
           </h1>
           <br />
-          <p onClick={reload} className=" cursor-pointer">
+          <p onClick={reloadPage} className=" cursor-pointer">
             Click here to reload
           </p>
         </div>
