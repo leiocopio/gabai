@@ -45,7 +45,7 @@ const WorkplaceDiscriminationLaws = () => {
         </div>
 
         <div className="grid items-center">
-          <img src={Law} alt="law " className="w-[22rem]" />
+          <img src={Law} alt="law " className="w-[22rem] " />
         </div>
       </div>
     </div>
