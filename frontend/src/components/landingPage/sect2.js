@@ -4,7 +4,7 @@ import sec2 from "../../img/sec2.png";
 function sect2() {
   return (
     <div
-      className="bg-gray-100
+      className="
       h-screen
       flex flex-row justify-around items-center px-[15rem]
       max-md:flex-col

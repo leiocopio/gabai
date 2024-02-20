@@ -21,8 +21,9 @@ function sect3() {
               alt=""
             />
           </div>
-
-          <span className="font-bold">Conversation A.I</span>
+          <h1>
+            <b>Conversation A.I</b>
+          </h1>
 
           <p className="mt-5">
             You can engage in real-time text-based conversition
@@ -40,7 +41,10 @@ function sect3() {
 
           <br />
 
-          <span className="font-bold">Search Engine</span>
+          <h1>
+            <b>Search Engine</b>
+          </h1>
+
           <p className="mt-5">
             You can look up information about workplace discrimition
           </p>
@@ -56,8 +60,10 @@ function sect3() {
             />
           </div>
 
-          <span className="font-bold">Progresive Web Application</span>
-          <p>GabAi can be installed on cross platforms</p>
+          <h1 className="">
+            <b>Progresive Web Application</b>
+          </h1>
+          <p className="mt-5">GabAi can be installed on cross platforms</p>
         </div>
         <br />
       </div>
