@@ -5,10 +5,11 @@ function sect2() {
   return (
     <div
       className="
-      h-screen
+
       flex flex-row justify-around items-center px-[15rem]
-      max-md:flex-col
+      max-lg:flex-col
       max-md:px-2
+      py-10
       "
     >
       <div className="flex justify-center items-center shrink-0">
@@ -18,14 +19,14 @@ function sect2() {
           className="flex-shrink-0 resize-none w-[20rem] bg-cover"
         />
       </div>
-      <div className="px-5 max-md:hidden">{/* Just to give them space*/}</div>
-      <div className="p-0">
-        <h1 className="text-6xl font-bold mb-4 max-md:text-center">
+      <span className="p-4"></span>
+      <div className="p-1">
+        <h1 className=" font-bold mb-4 max-md:text-center">
           About <span className="text-azure">GabAi</span>
         </h1>
         <br />
         <p
-          className="text-justify text-xl
+          className="text-justify
         leading-loose
         max-md:text-center"
         >

@@ -68,7 +68,10 @@ const Home = () => {
   return (
     <>
       {/* Main Content */}
-      <div className="flex flex-col">
+      <div
+        className="flex flex-col mx-[10rem]
+      max-md:mx-1"
+      >
         {/* Landing Page here!!! */}
         <div className="flex flex-col items-center justify-center">
           <LandingPage />

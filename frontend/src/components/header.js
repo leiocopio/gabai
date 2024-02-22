@@ -16,15 +16,24 @@ function Header() {
   return (
     <>
       {/* Navigation Bar  */}
-      <nav className="h-[3.875rem] w-full px-[1.25rem] font-bold border-b-2 border-azure">
+      <nav
+        className="py-3 w-full px-[20%] 
+      font-bold border-b-2 border-azure fixed z-10 bg-white
+      flex flex-row justify-between items-center
+       max-md:px-2 max-md:h-16
+      "
+      >
         {/* Brand Name */}
         <Link to="/">
           <div className="">
             <img src={Logo} alt="Logo" style={{ height: "25px" }} />
           </div>
         </Link>
-
-        <div className="flex flex-row items-center gap-x-5">
+        <div
+          className="flex flex-row items-center gap-x-5
+        max-md:hidden
+        "
+        >
           <ul className="flex flex-row gap-20 text-xl">
             <li
               className="hover:ease-in-out duration-300 
@@ -49,9 +58,12 @@ function Header() {
             </li>
           </ul>
         </div>
-
         {/* Search Bar */}
-        <div className="flex flex-row items-center text-md gap-x-5">
+        <div
+          className="flex flex-row items-center text-md gap-x-5
+        max-md:hidden
+        "
+        >
           {/* Login Btn */}
           <SignIn />
 

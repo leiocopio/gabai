@@ -1,24 +1,31 @@
+/* Font sizing */
+
+p,
+body {
+  font-size: 1rem;
+}
+
+h2{
+  font-size: 2.488rem;
+}
+
+h1{
+  font-size: 2.986rem;
+}
+
+/* Toggle dark mode */
+
 .dark-mode{
-
-
 
   background-color: #191919;
   transition: all 0.5s ease;
   color: white;
   
-  > p, h1, h2 {
+  > p, body, h1, h2 {
     color: white;
+
   }
 }
 
-p {
-  font-size: 12px;
-}
 
-h2{
-  font-size: 16px;
-}
 
-h1{
-  font-size: 32px;
-}
