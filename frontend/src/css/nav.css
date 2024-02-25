@@ -1,9 +1,16 @@
 /* CSS for navbar */
 
 nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+
     color:#336699; /* Hex code ni Azure */
+
+}
+
+.links{
+    ul > li {
+        cursor: pointer;
+        padding: .5rem;
+        border-radius: 10px;
+    }
 }
 

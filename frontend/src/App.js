@@ -69,7 +69,7 @@ const Home = () => {
     <>
       {/* Main Content */}
       <div
-        className="flex flex-col mx-[10rem]
+        className="flex flex-col
       max-md:mx-1"
       >
         {/* Landing Page here!!! */}
