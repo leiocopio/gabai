@@ -57,7 +57,8 @@ function Search() {
           <input
             type="text"
             placeholder="Search here"
-            className="w-[40rem] border-2 border-black rounded-full p-4"
+            className="w-[40rem] border-2 border-black rounded-full
+            text-black p-4"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
           />
