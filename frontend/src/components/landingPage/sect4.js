@@ -2,7 +2,7 @@ import React from "react";
 
 const CallToAction = () => {
   return (
-    <div className="flex items-center justify-center bg-gray-100 w-screen h-screen ">
+    <div className="flex items-center justify-center w-screen h-screen ">
       <div className="text-center">
         <h1 className="text-6xl font-bold mb-4 ">
           Let's stop <span className="text-azure">discrimination!</span>

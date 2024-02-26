@@ -7,7 +7,7 @@ export default function SignIn() {
   return (
     <Popup
       trigger={
-        <button className="border-2 rounded-xl p-4 py-1.5 border-azure ">
+        <button className="border-2 rounded-xl p-4 py-1.5 border-azure-500 text-azure-500">
           Log in
         </button>
       }
