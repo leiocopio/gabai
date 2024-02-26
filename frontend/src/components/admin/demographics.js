@@ -16,19 +16,19 @@ function UserDemographics() {
         <div className="flex flex-col w-full p-1 my-4 ">
           <ul className="flex flex-row justify-between gap-1 items-start text-bold">
             <li
-              className="border-2 w-full border-white p-1 rounded-xl cursor-pointer active:bg-azure-400 focus:bg-azure-400"
+              className="border-2 w-full border-azure p-1 rounded-xl cursor-pointer active:bg-azure-400 focus:bg-azure-400"
               onClick={() => handleClick("sex")}
             >
               Gender
             </li>
             <li
-              className="border-2 w-full border-white p-1 rounded-xl cursor-pointer active:bg-azure-400 focus:bg-azure-400"
+              className="border-2 w-full border-azure p-1 rounded-xl cursor-pointer active:bg-azure-400 focus:bg-azure-400"
               onClick={() => handleClick("age")}
             >
               Age
             </li>
             <li
-              className="border-2 w-full border-white p-1 rounded-xl cursor-pointer 
+              className="border-2 w-full border-azure p-1 rounded-xl cursor-pointer 
               active:bg-azure-400
                focus:bg-azure-400"
               onClick={() => handleClick("location")}
