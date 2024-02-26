@@ -11,28 +11,39 @@ import Sect4 from "../components/landingPage/sect4";
 function landingPage() {
   return (
     <>
+    <div>
       <Helmet>
         <title>GabAI</title>
       </Helmet>
+
+      <div>
       <section>
         {/* 1st section of landing page */}
         <Sect1></Sect1>
       </section>
+      </div>
 
+      <div>
       <section>
         {/* 2nd section of landing page */}
         <Sect2></Sect2>
       </section>
-
+      </div>
+        
+        <div>
       <section>
         {/* 3rd section of landing page */}
         <Sect3></Sect3>
       </section>
+      </div>
 
+      <div>
       <section>
         {/* 4th section of landing page */}
         <Sect4></Sect4>
       </section>
+      </div>
+      </div>
     </>
   );
 }

@@ -29,9 +29,9 @@ function FeedbackList() {
       </div>
 
       <div className="bg-gray-200 p-4">
-        <div className=" border border-sky-800 overflow-x-auto">
+        <div className=" border border-sky-800 overflow-x-auto rounded-xl">
           <table className="w-full table-auto">
-            <thead className=" px-10 border border-sky-800 bg-azure">
+            <thead className=" px-10 border border-sky-800 bg-azure rounded-xl">
               <tr>
                 <th className="px-4 py-2 text-left">Name</th>
                 <th className="px-4 py-2 text-left">Message</th>
