@@ -1,7 +1,7 @@
 import Popup from "reactjs-popup";
 import { IoIosCloseCircleOutline } from "react-icons/io";
 import SignUp from "./SignUp";
-import ConfirmEmail from "../forgotPass/confirmEmail";
+import ConfirmEmail from "../forgotPass/ConfirmEmail";
 
 export default function SignIn() {
   return (

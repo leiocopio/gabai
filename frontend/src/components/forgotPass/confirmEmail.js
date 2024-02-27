@@ -1,7 +1,7 @@
 import Popup from "reactjs-popup";
 import { IoIosCloseCircleOutline } from "react-icons/io";
 
-import EmailCode from "./authCode";
+import EmailCode from "./AuthCode";
 
 export default function PopupComponent() {
   return (

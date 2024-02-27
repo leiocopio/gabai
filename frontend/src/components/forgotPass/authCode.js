@@ -2,7 +2,7 @@
 import Popup from "reactjs-popup";
 
 import { IoIosCloseCircleOutline } from "react-icons/io";
-import NewPassword from "./newPassword";
+import NewPassword from "./NewPassword";
 
 function EmailCode() {
   const timer = 60;

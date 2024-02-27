@@ -9,7 +9,7 @@ import { BsMoon } from "react-icons/bs";
 
 // Components
 import SignIn from "./sign-in/SignIn";
-import SideNav from "./sideNav";
+import SideNav from "./SideNav";
 
 const toggle = () => {
   var element = document.body;
