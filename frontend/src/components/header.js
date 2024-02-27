@@ -8,7 +8,7 @@ import Logo from "../img/Logo.png";
 import { BsMoon } from "react-icons/bs";
 
 // Components
-import SignIn from "./sign-in/SignIn";
+import SignIn from "./SignIn";
 import SideNav from "./SideNav";
 
 const toggle = () => {
