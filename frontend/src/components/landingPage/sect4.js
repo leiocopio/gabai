@@ -7,7 +7,7 @@ const CallToAction = () => {
         <h1 className="text-6xl font-bold mb-4 ">
           Let's stop <span className="text-azure">discrimination!</span>
         </h1>
-        <p className="pb-6 text-3xl px-5">
+        <p className="pb-6  px-5">
           Creating a safe space for everyone, where they can get the help they
           need against workplace discrimination.
           <br />

@@ -1,5 +1,6 @@
 //CSS
 import "../css/nav.css";
+import "../css/App.css";
 
 //Images and Icons
 import { Link } from "react-router-dom";
@@ -20,7 +21,7 @@ function Header() {
     <>
       {/* Navigation Bar  */}
       <nav
-        className="py-3 w-full px-[20%] 
+        className="navbar py-3 w-full px-52
       font-bold border-b-2 border-azure fixed z-10 bg-white
       flex flex-row justify-between items-center
       max-lg:flex-col
