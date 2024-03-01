@@ -14,14 +14,14 @@ import "./css/nav.css";
 import Admin from "./pages/admin/dashboard";
 import CasesList from "./pages/admin/cases";
 import FeedbacksList from "./pages/admin/feedbacks";
-import Footer from "./components/footer";
+import Footer from "./components/Footer";
 import LandingPage from "./pages/landingPage";
 import Results from "./pages/search/results";
-import Terms from "./components/terms";
+import Terms from "./components/Terms";
 import UserList from "./pages/admin/users";
 import Chat from "./pages/chat/chat";
 import Testing from "./pages/testing/testing";
-import Header from "./components/header";
+import Header from "./components/Header";
 import Search from "./pages/search/search";
 
 //Modules

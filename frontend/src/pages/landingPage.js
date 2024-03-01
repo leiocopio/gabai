@@ -3,36 +3,31 @@ import React from "react";
 import Helmet from "react-helmet";
 
 //components
-import Sect1 from "../components/landingPage/sect1";
-import Sect2 from "../components/landingPage/sect2";
-import Sect3 from "../components/landingPage/sect3";
-import Sect4 from "../components/landingPage/sect4";
 
 function landingPage() {
+  const button = "border-2 border-gray-500 rounded-xl p-5 h-[10rem]";
   return (
     <>
       <Helmet>
         <title>GabAI</title>
       </Helmet>
-      <section>
-        {/* 1st section of landing page */}
-        <Sect1></Sect1>
-      </section>
-
-      <section>
-        {/* 2nd section of landing page */}
-        <Sect2></Sect2>
-      </section>
-
-      <section>
-        {/* 3rd section of landing page */}
-        <Sect3></Sect3>
-      </section>
-
-      <section>
-        {/* 4th section of landing page */}
-        <Sect4></Sect4>
-      </section>
+      <div className="h-screen mt-20">
+        <h1>
+          What do you want to do,
+          <br />
+          username?
+        </h1>
+        <div className="flex flex-row justify-center">
+          <div className={button}>
+            <h1>Search</h1>
+            <p>Search about discrimination here.</p>
+          </div>
+          <div className={button}>
+            <h1>Chat</h1>
+            <p>Need help? Talk to our AI Chatbot.</p>
+          </div>
+        </div>
+      </div>
     </>
   );
 }
