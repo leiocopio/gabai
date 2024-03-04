@@ -1,9 +1,16 @@
 // Welcome to Testing Page!!! 🧪
 
+import Profile from "../../components/signed-in/profile";
+
 function Testing() {
   return (
     <>
-      <button>Press the test btn</button>
+      <div
+        className="h-screen pt-20
+      "
+      >
+        <Profile></Profile>
+      </div>
     </>
   );
 }
